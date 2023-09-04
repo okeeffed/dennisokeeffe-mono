@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ProfileImage } from "@/components/profile-image/profile-image";
 import { ActivityFeed } from "@/components/activity-feed/activity-feed";
 import { ProjectList } from "@/components/project-list/project-list";
+
+export const metadata: Metadata = {
+  title: "Dennis O'Keeffe",
+  description:
+    "Personal website for professional software engineer and aspiring indie founder Dennis O'Keeffe.",
+};
 
 export default function Page(): JSX.Element {
   return (
