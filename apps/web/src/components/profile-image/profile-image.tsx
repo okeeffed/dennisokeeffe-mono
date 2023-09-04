@@ -8,6 +8,7 @@ export function ProfileImage(): JSX.Element {
         alt="Profile picture"
         className="rounded-xl relative shadow-solid-green-400"
         height={180}
+        priority
         src={profile}
         width={180}
       />
