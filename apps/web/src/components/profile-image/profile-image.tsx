@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profile from "@/images/bio.png";
 
-export function ProfileImage() {
+export function ProfileImage(): JSX.Element {
   return (
     <div className="flex items-center justify-center">
       <Image

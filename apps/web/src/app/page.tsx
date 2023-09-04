@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ProfileImage } from "@/components/ProfileImage/ProfileImage";
-import { Feed } from "@/components/Feed/Feed";
-import { ProjectList } from "@/components/ProjectList/ProjectList";
+import { ProfileImage } from "@/components/profile-image/profile-image";
+import { Feed } from "@/components/feed/feed";
+import { ProjectList } from "@/components/project-list/project-list";
 
 export default function Page(): JSX.Element {
   return (

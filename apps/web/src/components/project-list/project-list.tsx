@@ -11,11 +11,11 @@ const people = [
   // More people...
 ];
 
-function classNames(...classes) {
+function classNames(...classes): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export function ProjectList() {
+export function ProjectList(): JSX.Element {
   return (
     <div className="px-4 sm:px-6 lg:px-8">
       <div className="mt-8 flow-root">
