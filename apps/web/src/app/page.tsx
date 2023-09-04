@@ -6,21 +6,21 @@ import { ProjectList } from "@/components/project-list/project-list";
 export default function Page(): JSX.Element {
   return (
     <div>
-      <div className="text-center mx-auto space-x-4 py-2 bg-green-500 text-white font-mono">
+      <div className="text-center mx-auto space-x-4 py-2 bg-emerald-500 text-black font-mono">
         <Link
-          className="p-2 hover:bg-yellow-400 hover:text-black hover:font-bold"
+          className="p-2 font-semibold hover:bg-yellow-400 hover:text-black hover:font-bold"
           href="#activity-feed"
         >
           Activity Feed
         </Link>
         <Link
-          className="p-2 hover:bg-yellow-400 hover:text-black hover:font-bold"
+          className="p-2 font-semibold hover:bg-yellow-400 hover:text-black hover:font-bold"
           href="#projects"
         >
           Projects
         </Link>
         <Link
-          className="p-2 hover:bg-yellow-400 hover:text-black inline-flex items-center justify-center hover:font-bold"
+          className="p-2 font-semibold hover:bg-yellow-400 hover:text-black inline-flex items-center justify-center hover:font-bold"
           href="https://blog.dennisokeeffe.com"
           target="_blank"
         >
@@ -52,7 +52,7 @@ export default function Page(): JSX.Element {
           <h1 className="text-4xl">{`Dennis O'Keeffe`}</h1>
           <p className="text-xl font-mono text-gray-100">
             Tinkerer.{" "}
-            <span className="p-2 font-bold [text-shadow:_0_2px_0_rgb(0_0_0_/_70%)] bg-green-500 shadow-solid-yellow-400">
+            <span className="p-2 font-bold bg-yellow-400 text-black shadow-solid-green-sm">
               Wannabe founder.
             </span>
           </p>
