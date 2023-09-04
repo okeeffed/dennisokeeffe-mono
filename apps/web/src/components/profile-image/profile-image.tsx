@@ -6,8 +6,9 @@ export function ProfileImage(): JSX.Element {
     <div className="flex items-center justify-center">
       <Image
         alt="Profile picture"
-        className="rounded-xl relative shadow-solid-green-400"
+        className="rounded-xl relative shadow-solid-green"
         height={180}
+        priority
         src={profile}
         width={180}
       />

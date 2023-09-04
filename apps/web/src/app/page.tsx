@@ -1,26 +1,55 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ProfileImage } from "@/components/profile-image/profile-image";
 import { ActivityFeed } from "@/components/activity-feed/activity-feed";
 import { ProjectList } from "@/components/project-list/project-list";
 
+const title = "Dennis O'Keeffe";
+const description =
+  "Personal website for professional software engineer and aspiring indie founder Dennis O'Keeffe.";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.dennisokeeffe.com"),
+  title: "Dennis O'Keeffe",
+  description:
+    "Personal website for professional software engineer and aspiring indie founder Dennis O'Keeffe.",
+  openGraph: {
+    title,
+    description,
+    images: [
+      // Facebook
+      `/og?title=${description}`,
+      // Twitter
+      `/og?width=1200&height=675&title=${description}`,
+      // LinkedIn
+      `/og?width=1200&height=627&title=${description}`,
+      // Instagram
+      `/og?width=800&height=800&title=${description}`,
+    ],
+    type: "website",
+    siteName: "Dennis O'Keeffe",
+    url: "https://www.dennisokeeffe.com",
+  },
+};
+
 export default function Page(): JSX.Element {
   return (
     <div>
-      <div className="text-center mx-auto space-x-4 py-2 bg-green-500 text-white font-mono">
+      <div className="text-center mx-auto space-x-4 py-2 bg-emerald-500 text-black font-mono">
         <Link
-          className="p-2 hover:bg-yellow-400 hover:text-black hover:font-bold"
+          className="p-2 font-semibold hover:bg-yellow-400 hover:text-black hover:font-bold"
           href="#activity-feed"
         >
           Activity Feed
         </Link>
         <Link
-          className="p-2 hover:bg-yellow-400 hover:text-black hover:font-bold"
+          className="p-2 font-semibold hover:bg-yellow-400 hover:text-black hover:font-bold"
           href="#projects"
         >
           Projects
         </Link>
         <Link
-          className="p-2 hover:bg-yellow-400 hover:text-black inline-flex items-center justify-center hover:font-bold"
+          className="p-2 font-semibold hover:bg-yellow-400 hover:text-black inline-flex items-center justify-center hover:font-bold"
           href="https://blog.dennisokeeffe.com"
           target="_blank"
         >
@@ -52,13 +81,14 @@ export default function Page(): JSX.Element {
           <h1 className="text-4xl">{`Dennis O'Keeffe`}</h1>
           <p className="text-xl font-mono text-gray-100">
             Tinkerer.{" "}
-            <span className="p-2 font-bold [text-shadow:_0_2px_0_rgb(0_0_0_/_70%)] bg-green-500 shadow-solid-yellow-400">
+            <span className="p-2 font-bold bg-yellow-400 text-black shadow-solid-green-sm">
               Wannabe founder.
             </span>
           </p>
         </div>
         <div className="flex justify-center items-center gap-8">
           <Link href="https://www.linkedin.com/in/okeeffed" target="_blank">
+            <span className="sr-only">LinkedIn</span>
             <svg
               className="h-12 w-12 fill-white shadow-solid-social hover:fill-pink-400"
               viewBox="0 0 448 512"
@@ -68,6 +98,7 @@ export default function Page(): JSX.Element {
             </svg>
           </Link>
           <Link href="https://github.com/okeeffed" target="_blank">
+            <span className="sr-only">GitHub</span>
             <svg
               className="h-12 w-12 fill-white shadow-solid-social hover:fill-pink-400"
               viewBox="0 0 448 512"
@@ -77,6 +108,7 @@ export default function Page(): JSX.Element {
             </svg>
           </Link>
           <Link href="https://twitter.com/dennisokeeffe92" target="_blank">
+            <span className="sr-only">X (formerly Twitter)</span>
             <svg
               className="h-12 w-12 fill-white shadow-solid-social hover:fill-pink-400"
               viewBox="0 0 448 512"
@@ -86,6 +118,7 @@ export default function Page(): JSX.Element {
             </svg>
           </Link>
           <Link href="https://www.instagram.com/dendribbles" target="_blank">
+            <span className="sr-only">Instagram</span>
             <svg
               className="h-12 w-12 fill-white shadow-solid-social hover:fill-pink-400"
               viewBox="0 0 448 512"

@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.shadow-solid-green-400 {
-  box-shadow: 20px 20px #22c55e;
+.shadow-solid-green {
+  box-shadow: 20px 20px #10b981;
+}
+
+.shadow-solid-green-sm {
+  box-shadow: 10px 10px #10b981;
 }
 
 .shadow-solid-yellow-400 {
@@ -15,5 +19,5 @@
 }
 
 .shadow-solid-social {
-  box-shadow: 4px 4px #22c55e;
+  box-shadow: 4px 4px #10b981;
 }
