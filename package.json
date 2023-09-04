@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "zellij --layout ./zellij.kdl",
     "dev:web": "turbo run dev --filter={./apps/web}...",
     "dev:cms": "turbo run dev --filter={./apps/cms}...",
     "lint": "turbo run lint",
