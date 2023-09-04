@@ -4,10 +4,32 @@ import { ProfileImage } from "@/components/profile-image/profile-image";
 import { ActivityFeed } from "@/components/activity-feed/activity-feed";
 import { ProjectList } from "@/components/project-list/project-list";
 
+const title = "Dennis O'Keeffe";
+const description =
+  "Personal website for professional software engineer and aspiring indie founder Dennis O'Keeffe.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.dennisokeeffe.com"),
   title: "Dennis O'Keeffe",
   description:
     "Personal website for professional software engineer and aspiring indie founder Dennis O'Keeffe.",
+  openGraph: {
+    title,
+    description,
+    images: [
+      // Facebook
+      `/og?title=${description}`,
+      // Twitter
+      `/og?width=1200&height=675&title=${description}`,
+      // LinkedIn
+      `/og?width=1200&height=627&title=${description}`,
+      // Instagram
+      `/og?width=800&height=800&title=${description}`,
+    ],
+    type: "website",
+    siteName: "Dennis O'Keeffe",
+    url: "https://www.dennisokeeffe.com",
+  },
 };
 
 export default function Page(): JSX.Element {
