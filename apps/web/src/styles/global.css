@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-solid-green-400 {
+  box-shadow: 20px 20px #22c55e;
+}
+
+.shadow-solid-yellow-400 {
+  box-shadow: 10px 10px #facc15;
+}
+
+.shadow-solid-pink-500 {
+  box-shadow: 10px 10px #ec4899;
+}
+
+.shadow-solid-social {
+  box-shadow: 4px 4px #22c55e;
+}
