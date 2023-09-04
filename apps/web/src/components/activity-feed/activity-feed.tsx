@@ -80,7 +80,7 @@ const activity = [
   },
 ];
 
-export function Feed(): JSX.Element {
+export function ActivityFeed(): JSX.Element {
   return (
     <ul className="space-y-6">
       {activity.map((activityItem, activityItemIdx) => (

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ProfileImage } from "@/components/profile-image/profile-image";
-import { Feed } from "@/components/feed/feed";
+import { ActivityFeed } from "@/components/activity-feed/activity-feed";
 import { ProjectList } from "@/components/project-list/project-list";
 
 export default function Page(): JSX.Element {
@@ -105,7 +105,7 @@ export default function Page(): JSX.Element {
             Activity Feed
           </span>
         </h2>
-        <Feed />
+        <ActivityFeed />
       </div>
       <hr />
       <div className="mx-auto max-w-5xl py-32 px-8 space-y-32" id="projects">
