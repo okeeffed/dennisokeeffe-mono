@@ -59,6 +59,7 @@ export default function Page(): JSX.Element {
         </div>
         <div className="flex justify-center items-center gap-8">
           <Link href="https://www.linkedin.com/in/okeeffed" target="_blank">
+            <span className="sr-only">LinkedIn</span>
             <svg
               className="h-12 w-12 fill-white shadow-solid-social hover:fill-pink-400"
               viewBox="0 0 448 512"
@@ -68,6 +69,7 @@ export default function Page(): JSX.Element {
             </svg>
           </Link>
           <Link href="https://github.com/okeeffed" target="_blank">
+            <span className="sr-only">GitHub</span>
             <svg
               className="h-12 w-12 fill-white shadow-solid-social hover:fill-pink-400"
               viewBox="0 0 448 512"
@@ -77,6 +79,7 @@ export default function Page(): JSX.Element {
             </svg>
           </Link>
           <Link href="https://twitter.com/dennisokeeffe92" target="_blank">
+            <span className="sr-only">X (formerly Twitter)</span>
             <svg
               className="h-12 w-12 fill-white shadow-solid-social hover:fill-pink-400"
               viewBox="0 0 448 512"
@@ -86,6 +89,7 @@ export default function Page(): JSX.Element {
             </svg>
           </Link>
           <Link href="https://www.instagram.com/dendribbles" target="_blank">
+            <span className="sr-only">Instagram</span>
             <svg
               className="h-12 w-12 fill-white shadow-solid-social hover:fill-pink-400"
               viewBox="0 0 448 512"
