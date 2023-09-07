@@ -79,12 +79,12 @@ export default function Page(): JSX.Element {
         <ProfileImage />
         <div className="text-white text-center space-y-6">
           <h1 className="text-4xl">{`Dennis O'Keeffe`}</h1>
-          <p className="text-xl font-mono text-gray-100">
-            Tinkerer.{" "}
-            <span className="p-2 font-bold bg-yellow-400 text-black shadow-solid-green-sm">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2">
+            <p className="text-xl font-mono text-gray-100">Tinkerer.</p>
+            <p className="text-xl font-mono p-2 font-bold bg-yellow-400 text-black shadow-solid-green-sm sm:block">
               Wannabe founder.
-            </span>
-          </p>
+            </p>
+          </div>
         </div>
         <div className="flex justify-center items-center gap-8">
           <Link href="https://www.linkedin.com/in/okeeffed" target="_blank">
@@ -130,10 +130,10 @@ export default function Page(): JSX.Element {
         </div>
       </div>
       <div
-        className="mx-auto max-w-3xl py-32 px-8 space-y-32"
+        className="mx-auto max-w-3xl py-16 space-y-16 md:py-32 px-4 md:space-y-32"
         id="activity-feed"
       >
-        <h2 className="text-center font-bold font-sans text-white text-5xl">
+        <h2 className="text-center font-bold font-sans text-white text-3xl md:text-5xl leading-loose">
           <span className="p-4 font-bold [text-shadow:_1px_3px_0_rgb(360_0_0_/_100%)] bg-slate-800 shadow-solid-pink-500">
             Activity Feed
           </span>
@@ -141,9 +141,12 @@ export default function Page(): JSX.Element {
         <ActivityFeed />
       </div>
       <hr />
-      <div className="mx-auto max-w-5xl py-32 px-8 space-y-32" id="projects">
+      <div
+        className="mx-auto max-w-5xl py-16 space-y-8 md:py-32 px-4 md:space-y-32"
+        id="projects"
+      >
         <div>
-          <h2 className="mb-16 text-center font-bold font-sans text-white text-5xl">
+          <h2 className="mb-16 text-center font-bold font-sans text-white text-3xl md:text-5xl">
             <span className="p-4 font-bold [text-shadow:_1px_3px_0_rgb(360_0_0_/_100%)] bg-slate-800 shadow-solid-pink-500">
               Projects
             </span>
