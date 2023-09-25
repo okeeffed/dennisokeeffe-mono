@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProfileImage } from "@/components/profile-image/profile-image";
-import { ActivityFeed } from "@/components/activity-feed/activity-feed";
+// import { ActivityFeed } from "@/components/activity-feed/activity-feed";
 import { ProjectList } from "@/components/project-list/project-list";
 
 const title = "Dennis O'Keeffe";
@@ -36,12 +36,12 @@ export default function Page(): JSX.Element {
   return (
     <div>
       <div className="text-center mx-auto space-x-4 py-2 bg-emerald-500 text-black font-mono">
-        <Link
+        {/* <Link
           className="p-2 font-semibold hover:bg-yellow-400 hover:text-black hover:font-bold"
           href="#activity-feed"
         >
           Activity Feed
-        </Link>
+        </Link> */}
         <Link
           className="p-2 font-semibold hover:bg-yellow-400 hover:text-black hover:font-bold"
           href="#projects"
@@ -135,7 +135,7 @@ export default function Page(): JSX.Element {
           </Link>
         </div>
       </div>
-      <div
+      {/* <div
         className="mx-auto max-w-3xl py-16 space-y-16 md:py-32 px-4 md:space-y-32"
         id="activity-feed"
       >
@@ -146,7 +146,7 @@ export default function Page(): JSX.Element {
         </h2>
         <ActivityFeed />
       </div>
-      <hr />
+      <hr /> */}
       <div
         className="mx-auto max-w-5xl py-16 space-y-8 md:py-32 px-4 md:space-y-32"
         id="projects"
@@ -158,8 +158,7 @@ export default function Page(): JSX.Element {
             </span>
           </h2>
           <p className="text-center font-mono max-w-2xl mx-auto text-xs">
-            (Yes this is a work in progress for next time I am procrastinating
-            other work.)
+            (Incomplete list. This is a work in progress.)
           </p>
         </div>
         <ProjectList />

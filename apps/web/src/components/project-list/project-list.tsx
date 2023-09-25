@@ -2,11 +2,109 @@ import Link from "next/link";
 
 const people = [
   {
+    name: "Zen Maru Studio",
+    title: "Digital agency for international clients",
+    whatHappened: "Active",
+    status: "Active",
+    url: "https://www.zenmarustudio.com/",
+  },
+  {
+    name: "DropPack",
+    title: "Tool for sane multi-project file management",
+    whatHappened: "Released",
+    status: "Active",
+    url: "https://droppack.dev",
+  },
+  {
     name: "melbcoffee.com",
-    title: "Coffee blog",
-    email: "Still posting",
-    role: "Active",
+    title: "Coffee blog + social media community",
+    whatHappened: "Ongoing - work in progress",
+    status: "Active",
     url: "https://www.melbcoffee.com",
+  },
+  {
+    name: "Visibuild",
+    title: "Employment in Constructon QA company",
+    whatHappened: "Left the job",
+    status: "Finished",
+    url: "https://www.visibuild.com.au",
+  },
+  {
+    name: "Usability",
+    title: "Employment at UX research company",
+    whatHappened: "Left the job",
+    status: "Finished",
+    url: "https://usabilityhub.com",
+  },
+  {
+    name: "TheLastWeekIn.Dev",
+    title: "Newsletter for developers",
+    whatHappened: "Ongoing weekly",
+    status: "Active",
+    url: "https://thelastweekin.dev",
+  },
+  {
+    name: "Culture Amp",
+    title: "Employment at employee experience platform",
+    whatHappened: "Left the job",
+    status: "Finished",
+    url: "https://www.cultureamp.com",
+  },
+  {
+    name: "Present Company",
+    title: "Employment at digital agency",
+    whatHappened: "Left the job",
+    status: "Finished",
+    url: "https://www.presentcompany.co",
+  },
+  {
+    name: "Kill The Fin Trade",
+    title: "Website built for Sea Shepherd",
+    whatHappened: "Campaign complete",
+    status: "Offline",
+    url: "https://semipermanent.com/case-studies/kill-the-fin-trade",
+  },
+  {
+    name: "NSW Gov National Parks Blog",
+    title: "Website built for NSW Government",
+    whatHappened: "Website complete",
+    status: "Online",
+    url: "https://blog.nationalparks.nsw.gov.au",
+  },
+  {
+    name: "Red Rooster rewards iOS app",
+    title: "Mobile app built for Red Rooster",
+    whatHappened: "Released",
+    status: "Offline",
+    url: "https://apps.apple.com/au/app/red-rooster/id958424854",
+  },
+  {
+    name: "Oporto rewards iOS app",
+    title: "Mobile app built for Oporto",
+    whatHappened: "Released",
+    status: "Offline",
+    url: "https://apps.apple.com/au/app/oporto/id920675672",
+  },
+  {
+    name: "[yellowtail] website",
+    title: "Website built for [yellowtail]",
+    whatHappened: "Released",
+    status: "Online",
+    url: "https://www.yellowtailwine.com",
+  },
+  {
+    name: "Oporto website",
+    title: "Website built for Oporto",
+    whatHappened: "Released",
+    status: "Offline",
+    url: "https://www.oporto.com.au",
+  },
+  {
+    name: "Red Rooster website",
+    title: "Website built for Red Rooster",
+    whatHappened: "Released",
+    status: "Offline",
+    url: "https://redrooster.com.au/",
   },
   // More people...
 ];
@@ -58,7 +156,7 @@ export function ProjectList(): JSX.Element {
               </thead>
               <tbody>
                 {people.map((project, projectIdx) => (
-                  <tr key={project.email}>
+                  <tr key={project.whatHappened}>
                     <td
                       className={classNames(
                         projectIdx !== people.length - 1
@@ -87,7 +185,7 @@ export function ProjectList(): JSX.Element {
                         "whitespace-nowrap hidden px-3 py-4 text-sm text-gray-500 lg:table-cell"
                       )}
                     >
-                      {project.email}
+                      {project.whatHappened}
                     </td>
                     <td
                       className={classNames(
@@ -97,7 +195,7 @@ export function ProjectList(): JSX.Element {
                         "whitespace-nowrap px-3 py-4 text-sm text-gray-500"
                       )}
                     >
-                      {project.role}
+                      {project.status}
                     </td>
                     <td
                       className={classNames(
