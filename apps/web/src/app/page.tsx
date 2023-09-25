@@ -49,6 +49,12 @@ export default function Page(): JSX.Element {
           Projects
         </Link>
         <Link
+          className="p-2 font-semibold hover:bg-yellow-400 hover:text-black hover:font-bold"
+          href="/resume"
+        >
+          Resume
+        </Link>
+        <Link
           className="p-2 font-semibold hover:bg-yellow-400 hover:text-black inline-flex items-center justify-center hover:font-bold"
           href="https://blog.dennisokeeffe.com"
           target="_blank"
