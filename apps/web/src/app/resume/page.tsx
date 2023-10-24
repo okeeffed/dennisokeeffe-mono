@@ -197,6 +197,21 @@ export default function Page(): JSX.Element {
               used for IaC.
             </p>
           </div>
+
+          <div className="col-span-12 md:col-span-4">
+            <h3 className="text-xl uppercase font-bold">Apr 2016 - Aug 2017</h3>
+          </div>
+          <div className="col-span-12 md:col-span-8">
+            <p className="text-xl font-bold mb-4">
+              Lead Software Engineer at NightGuru
+            </p>
+            <p className="text-lg">
+              Objective-C iOS app with PHP back-end and MySQL database.
+              Infrastructure hosted on AWS. Data analytics with Python. Worked
+              across the stack (primarily iOS) to implement all features after a
+              hand-off of the product from an overseas company.
+            </p>
+          </div>
         </div>
         <div className="py-8 space-y-4 text-center">
           <p>
