@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const people = [
   {
+    name: "gitpig.dev",
+    title: "Unofficial GitLab Client",
+    whatHappened: "Active",
+    status: "Active",
+    url: "https://www.gitpig.dev/",
+  },
+  {
     name: "Zen Maru Studio",
     title: "Digital agency for international clients",
     whatHappened: "Active",
